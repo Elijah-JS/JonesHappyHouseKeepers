@@ -29,21 +29,23 @@ export function ServicesSection() {
         <div className="mt-10 grid min-w-0 gap-5 sm:mt-10 sm:gap-6 lg:mt-12 lg:grid-cols-12 lg:gap-7">
           <Link
             href={`/services#${home.id}`}
-            className="group relative block h-[260px] overflow-hidden min-[390px]:h-[280px] sm:h-[360px] lg:col-span-7 lg:h-[520px]"
+            className="group relative flex min-h-[260px] min-w-0 flex-col justify-end min-[390px]:min-h-[280px] sm:min-h-[360px] lg:col-span-7 lg:min-h-[520px]"
           >
-            <Photo
-              src={home.image.src}
-              alt={home.image.alt}
-              className="absolute inset-0"
-              imageClassName="object-[center_60%] group-hover:scale-[1.03] lg:object-center"
-              sizes="(min-width: 1024px) 58vw, 100vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-5 text-cream sm:p-6 md:p-8">
-              <h3 className="font-display text-[1.35rem] font-semibold tracking-tight sm:text-2xl">
+            <div className="absolute inset-0 overflow-hidden">
+              <Photo
+                src={home.image.src}
+                alt={home.image.alt}
+                className="h-full w-full"
+                imageClassName="object-[center_60%] group-hover:scale-[1.03] lg:object-center"
+                sizes="(min-width: 1024px) 58vw, 100vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/20 to-transparent" />
+            </div>
+            <div className="relative z-10 min-w-0 px-4 py-5 sm:px-6 sm:py-6 md:px-8 md:py-8">
+              <h3 className="max-w-[16ch] font-display text-[clamp(1.2rem,4.8vw,1.5rem)] font-semibold leading-[1.28] tracking-tight text-cream sm:text-2xl sm:leading-tight">
                 {home.name}
               </h3>
-              <p className="mt-1.5 max-w-sm text-sm leading-relaxed text-cream/80">
+              <p className="mt-1.5 max-w-sm text-[0.875rem] leading-[1.55] text-cream/85 sm:text-sm sm:leading-relaxed">
                 {home.summary}
               </p>
             </div>
@@ -90,22 +92,23 @@ export function ServicesSection() {
 
           <Link
             href={`/services#${realEstate.id}`}
-            className="group relative block h-[220px] overflow-hidden min-[390px]:h-[240px] sm:h-[280px] lg:col-span-7 lg:h-[320px]"
+            className="group relative flex min-h-[220px] min-w-0 flex-col justify-end min-[390px]:min-h-[240px] sm:min-h-[280px] lg:col-span-7 lg:min-h-[320px]"
           >
-            <Photo
-              src={realEstate.image.src}
-              alt={realEstate.image.alt}
-              className="absolute inset-0"
-              imageClassName="object-[center_35%] group-hover:scale-[1.03] lg:object-center"
-              sizes="(min-width: 1024px) 58vw, 100vw"
-            />
-            <div className="absolute inset-0 bg-ink/25" />
-            <div className="absolute inset-0 flex items-end p-5 sm:p-6 md:p-8">
-              <div className="text-cream">
-                <h3 className="font-display text-[1.35rem] font-semibold tracking-tight sm:text-2xl">
+            <div className="absolute inset-0 overflow-hidden">
+              <Photo
+                src={realEstate.image.src}
+                alt={realEstate.image.alt}
+                className="h-full w-full"
+                imageClassName="object-[center_35%] group-hover:scale-[1.03] lg:object-center"
+                sizes="(min-width: 1024px) 58vw, 100vw"
+              />
+            </div>
+            <div className="relative z-10 min-w-0 w-full bg-gradient-to-t from-ink/80 via-ink/45 to-transparent px-4 pb-5 pt-14 sm:px-6 sm:pb-6 sm:pt-16 md:px-8 md:pb-8 md:pt-20">
+              <div className="max-w-md text-cream [text-shadow:0_1px_10px_rgba(27,26,23,0.28)]">
+                <h3 className="font-display text-[clamp(1.2rem,4.8vw,1.5rem)] font-semibold leading-[1.28] tracking-tight sm:text-2xl sm:leading-tight">
                   {realEstate.name}
                 </h3>
-                <p className="mt-1.5 max-w-sm text-sm leading-relaxed text-cream/80">
+                <p className="mt-1.5 text-[0.875rem] leading-[1.55] text-cream/90 sm:text-sm sm:leading-relaxed">
                   {realEstate.summary}
                 </p>
               </div>

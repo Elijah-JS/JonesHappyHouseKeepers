@@ -48,7 +48,7 @@ export function HeroSection() {
           </dl>
         </div>
 
-        <div className="relative order-1 aspect-[4/3] min-h-[188px] min-w-0 max-h-[240px] min-[390px]:max-h-[280px] md:aspect-[16/10] md:max-h-[380px] lg:order-2 lg:aspect-auto lg:h-auto lg:max-h-none lg:min-h-[100svh]">
+        <div className="relative order-1 aspect-[4/3] w-full max-h-[260px] min-h-[200px] min-[390px]:max-h-[280px] md:aspect-[16/10] md:max-h-[380px] lg:order-2 lg:aspect-auto lg:h-auto lg:max-h-none lg:min-h-[100svh]">
           <Photo
             src={images.hero.src}
             alt={images.hero.alt}
