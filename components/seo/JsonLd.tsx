@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site-url";
 
 export function JsonLd() {
   const data = {
@@ -7,9 +8,7 @@ export function JsonLd() {
     name: site.name,
     description: site.description,
     telephone: "+13233334054",
-    ...(process.env.NEXT_PUBLIC_SITE_URL
-      ? { url: process.env.NEXT_PUBLIC_SITE_URL }
-      : {}),
+    url: getSiteUrl(),
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.line1,

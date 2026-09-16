@@ -5,6 +5,7 @@ import { MobileCtaBar } from "@/components/layout/MobileCtaBar";
 import { Navbar } from "@/components/layout/Navbar";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { site } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -19,16 +20,19 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = getSiteUrl();
+const pageTitle = "Jones Happy Housekeepers | Cleaning Services in Fontana, CA";
+const pageDescription =
+  "Professional home and office cleaning services in Fontana, California. Explore services and request a free quote from Jones Happy Housekeepers.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Jones Happy Housekeepers | House Cleaning in Fontana, CA",
+    default: pageTitle,
     template: "%s | Jones Happy Housekeepers",
   },
-  description:
-    "Jones Happy Housekeepers provides professional home and office cleaning in Fontana, California. Request a free quote or call (323) 333-4054.",
+  description: pageDescription,
+  applicationName: site.name,
   keywords: [
     "house cleaning Fontana CA",
     "cleaning services Fontana",
@@ -46,16 +50,35 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: site.name,
-    title: "Jones Happy Housekeepers | House Cleaning in Fontana, CA",
-    description:
-      "Professional home and office cleaning in Fontana, CA. 4.8-star customer rating based on 49 public reviews. Request a free quote.",
+    title: pageTitle,
+    description: pageDescription,
     url: "/",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: `${site.name} - Home & Office Cleaning in Fontana, CA`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jones Happy Housekeepers | House Cleaning in Fontana, CA",
-    description:
-      "Professional home and office cleaning in Fontana, California. Request a free quote.",
+    title: pageTitle,
+    description: pageDescription,
+    images: [
+      {
+        url: "/opengraph-image",
+        alt: `${site.name} - Home & Office Cleaning in Fontana, CA`,
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-icon", type: "image/png", sizes: "180x180" }],
   },
 };
 
