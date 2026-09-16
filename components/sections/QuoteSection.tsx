@@ -5,13 +5,13 @@ import { images, site } from "@/lib/site";
 
 export function QuoteSection() {
   return (
-    <section id="quote" className="bg-surface py-14 md:py-20 lg:py-28">
-      <Container className="grid gap-8 lg:grid-cols-12 lg:gap-14">
+    <section id="contact" className="scroll-mt-[calc(4.25rem+env(safe-area-inset-top)+0.75rem)] bg-surface py-16 md:scroll-mt-[calc(5rem+env(safe-area-inset-top)+0.75rem)] md:py-20 lg:py-28">
+      <Container className="grid gap-10 lg:grid-cols-12 lg:gap-14">
         <div className="lg:col-span-5">
           <p className="text-[10px] uppercase tracking-[0.14em] text-sage md:text-[11px] md:tracking-[0.22em]">
             Free quote
           </p>
-          <h2 className="mt-2.5 font-display text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-ink min-[390px]:text-[1.85rem] md:mt-3 md:text-4xl">
+          <h2 className="mt-3 font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold leading-[1.22] tracking-tight text-ink md:mt-3 md:text-4xl md:leading-[1.2]">
             Tell us about the space.
           </h2>
           <p className="mt-4 max-w-sm text-[15px] leading-[1.7] text-ink-soft md:mt-5 md:leading-relaxed">

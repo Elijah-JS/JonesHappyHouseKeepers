@@ -21,10 +21,10 @@ export default function AboutPage() {
         description="A local Fontana cleaning company providing home, office, general, and real-estate-related cleaning."
       />
 
-      <section className="bg-surface py-12 md:py-24">
-        <Container className="grid items-start gap-8 lg:grid-cols-12 lg:gap-12">
+      <section className="bg-surface py-16 md:py-24">
+        <Container className="grid items-start gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-6">
-            <h2 className="font-display text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-ink md:text-3xl">
+            <h2 className="font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold leading-[1.22] tracking-tight text-ink md:text-3xl md:leading-[1.2]">
               Home and office cleaning, from Fontana.
             </h2>
             <div className="mt-5 max-w-md space-y-4 text-[15px] leading-[1.7] text-ink-soft md:mt-6 md:space-y-5 md:leading-relaxed">

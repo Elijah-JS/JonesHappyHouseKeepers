@@ -38,7 +38,13 @@ html {
 
 html,
 body {
-  overflow-x: clip;
+  overflow-x: hidden;
+}
+
+html.menu-open,
+html.menu-open body {
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 body {

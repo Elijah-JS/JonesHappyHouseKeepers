@@ -21,16 +21,13 @@ export function TestimonialCard({ review, className }: TestimonialCardProps) {
         className,
       )}
     >
-      <header className="flex items-center justify-between gap-4">
-        {name ? (
+      {name ? (
+        <header>
           <p className="min-w-0 truncate font-display text-[15px] font-semibold tracking-tight text-cream">
             {name}
           </p>
-        ) : (
-          <span />
-        )}
-        {isYelp ? <YelpMark /> : null}
-      </header>
+        </header>
+      ) : null}
 
       {typeof review.rating === "number" ? (
         <div className="mt-3">

@@ -7,26 +7,26 @@ export function ServicesSection() {
   const [home, office, general, realEstate] = services;
 
   return (
-    <section id="services" className="bg-surface py-14 md:py-20 lg:py-28">
+    <section id="services" className="scroll-mt-[calc(4.25rem+env(safe-area-inset-top)+0.75rem)] bg-surface py-16 md:scroll-mt-[calc(5rem+env(safe-area-inset-top)+0.75rem)] md:py-20 lg:py-28">
       <Container>
-        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between md:gap-6">
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between md:gap-6">
           <div className="max-w-xl">
             <p className="text-[10px] uppercase tracking-[0.14em] text-sage md:text-[11px] md:tracking-[0.22em]">
               Services
             </p>
-            <h2 className="mt-2.5 font-display text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-ink min-[390px]:text-[1.85rem] md:mt-3 md:text-4xl">
+            <h2 className="mt-3 font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold leading-[1.22] tracking-tight text-ink md:mt-3 md:text-4xl md:leading-[1.2]">
               Cleaning for the spaces you live and work in.
             </h2>
           </div>
           <Link
             href="/services"
-            className="inline-flex min-h-11 items-center text-[13px] uppercase tracking-[0.08em] text-ink-soft transition-colors hover:text-ink"
+            className="inline-flex min-h-12 items-center text-[13px] uppercase tracking-[0.08em] text-ink-soft transition-colors hover:text-ink md:min-h-11"
           >
             All services
           </Link>
         </div>
 
-        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-6 lg:mt-12 lg:grid-cols-12 lg:gap-7">
+        <div className="mt-10 grid min-w-0 gap-5 sm:mt-10 sm:gap-6 lg:mt-12 lg:grid-cols-12 lg:gap-7">
           <Link
             href={`/services#${home.id}`}
             className="group relative block h-[260px] overflow-hidden min-[390px]:h-[280px] sm:h-[360px] lg:col-span-7 lg:h-[520px]"

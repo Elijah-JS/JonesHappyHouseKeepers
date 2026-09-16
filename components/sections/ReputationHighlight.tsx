@@ -30,7 +30,7 @@ export function ReputationHighlight({
           className={showEyebrow ? "mt-5 sm:mt-6" : undefined}
           aria-label={`${site.reputation.rating} out of 5 stars`}
         >
-          <span className="block font-display text-[5rem] font-semibold leading-none tracking-tight min-[375px]:text-[5.75rem] min-[430px]:text-[6.25rem] sm:text-[7.5rem] lg:text-[8.5rem]">
+          <span className="block font-display text-[clamp(4.25rem,20vw,6.25rem)] font-semibold leading-none tracking-tight sm:text-[7.5rem] lg:text-[8.5rem]">
             {site.reputation.rating}
           </span>
           <StarRating

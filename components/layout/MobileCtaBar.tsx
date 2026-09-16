@@ -13,7 +13,7 @@ export function MobileCtaBar() {
   }
 
   return (
-    <div className="mobile-cta-bar fixed inset-x-0 bottom-0 z-40 border-t border-border bg-cream/95 px-4 pt-2.5 backdrop-blur-md [[data-menu-open=true]_&]:hidden lg:hidden pb-[max(0.65rem,env(safe-area-inset-bottom))]">
+    <div className="mobile-cta-bar fixed inset-x-0 bottom-0 z-40 border-t border-border bg-cream px-4 pt-3 backdrop-blur-none [[data-menu-open=true]_&]:hidden lg:hidden pb-[max(0.75rem,env(safe-area-inset-bottom))]">
       <div className="mx-auto grid max-w-lg grid-cols-2 gap-2.5">
         <a
           href={site.phone.href}

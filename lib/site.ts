@@ -38,6 +38,14 @@ export const navigation = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
+export const mobileNavigation = [
+  { href: "/", hash: "", label: "Home" },
+  { href: "/#services", hash: "services", label: "Services" },
+  { href: "/#about", hash: "about", label: "About" },
+  { href: "/#reviews", hash: "reviews", label: "Reviews" },
+  { href: "/#contact", hash: "contact", label: "Contact" },
+] as const;
+
 export const services = [
   {
     id: "home-cleaning",

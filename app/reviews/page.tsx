@@ -23,7 +23,7 @@ export default function ReviewsPage() {
         description={site.reputation.summary}
       />
 
-      <section className="bg-charcoal py-14 text-cream md:py-20 lg:py-24">
+      <section className="bg-charcoal py-16 text-cream md:py-20 lg:py-24">
         <Container>
           <ReputationHighlight showEyebrow={false} />
           <TestimonialGrid />

@@ -20,8 +20,8 @@ export default function ContactPage() {
         description="Tell us about the property and the kind of cleaning you need. You can also call the office directly."
       />
 
-      <section className="bg-surface py-12 md:py-24">
-        <Container className="grid gap-8 lg:grid-cols-12 lg:gap-12">
+      <section className="bg-surface py-16 md:py-24">
+        <Container className="grid gap-10 lg:grid-cols-12 lg:gap-12">
           <aside className="order-2 lg:order-1 lg:col-span-4">
             <h2 className="font-display text-[1.45rem] font-semibold tracking-tight text-ink md:text-2xl">
               Jones Happy Housekeepers

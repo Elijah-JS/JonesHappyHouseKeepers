@@ -4,13 +4,13 @@ import { images } from "@/lib/site";
 
 export function ValueSection() {
   return (
-    <section className="bg-bg-warm py-14 md:py-20 lg:py-28">
-      <Container className="grid items-center gap-8 md:gap-12 lg:grid-cols-12 lg:gap-16">
+    <section className="bg-bg-warm py-16 md:py-20 lg:py-28">
+      <Container className="grid items-center gap-10 md:gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-6">
           <p className="text-[10px] uppercase tracking-[0.14em] text-sage md:text-[11px] md:tracking-[0.22em]">
             The feeling after
           </p>
-          <h2 className="mt-3 max-w-[20ch] font-display text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-ink min-[390px]:text-[1.85rem] md:mt-4 md:max-w-[16ch] md:text-[2.65rem] md:leading-[1.15]">
+          <h2 className="mt-3 max-w-[20ch] font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold leading-[1.22] tracking-tight text-ink md:mt-4 md:max-w-[16ch] md:text-[2.65rem] md:leading-[1.15]">
             Cleaning that lets your home feel like home again.
           </h2>
           <div className="mt-5 max-w-md space-y-4 text-[15px] leading-[1.7] text-ink-soft md:mt-8 md:space-y-5 md:leading-relaxed">

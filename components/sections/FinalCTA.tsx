@@ -5,12 +5,12 @@ import { site } from "@/lib/site";
 
 export function FinalCTA() {
   return (
-    <section className="bg-bg-warm py-14 md:py-20 lg:py-24">
+    <section className="bg-bg-warm py-16 md:py-20 lg:py-24">
       <Container className="max-w-2xl text-left md:text-center">
         <p className="text-[10px] uppercase tracking-[0.14em] text-sage md:text-[11px] md:tracking-[0.22em]">
           Next step
         </p>
-        <h2 className="mt-3 font-display text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-ink min-[390px]:text-[1.85rem] md:mt-4 md:text-4xl">
+        <h2 className="mt-3 font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold leading-[1.22] tracking-tight text-ink md:mt-4 md:text-4xl md:leading-[1.2]">
           Ready for a cleaner space?
         </h2>
         <p className="mt-4 max-w-md text-[15px] leading-[1.7] text-ink-soft md:mx-auto md:mt-5 md:leading-relaxed">

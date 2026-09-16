@@ -19,7 +19,7 @@ export function Photo({
   sizes = "100vw",
 }: PhotoProps) {
   return (
-    <div className={cn("relative h-full w-full overflow-hidden", className)}>
+    <div className={cn("relative min-w-0 h-full w-full overflow-hidden", className)}>
       <Image
         src={src}
         alt={alt}

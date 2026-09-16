@@ -6,7 +6,7 @@ import { navigation, services, site } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="bg-charcoal text-cream">
-      <Container className="grid gap-10 py-12 md:grid-cols-12 md:gap-12 md:py-20">
+      <Container className="grid gap-10 py-14 md:grid-cols-12 md:gap-12 md:py-20">
         <div className="md:col-span-5">
           <Logo inverted />
           <p className="mt-5 max-w-xs text-sm leading-[1.7] text-cream/65 md:mt-6 md:leading-relaxed">
@@ -14,7 +14,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 md:col-span-7 md:grid-cols-7">
+        <div className="grid min-w-0 grid-cols-2 gap-8 md:col-span-7 md:grid-cols-7">
           <div className="md:col-span-3">
             <p className="text-[10px] uppercase tracking-[0.16em] text-cream/45 md:text-[11px] md:tracking-[0.2em]">
               Visit

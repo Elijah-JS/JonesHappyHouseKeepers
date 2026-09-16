@@ -5,8 +5,8 @@ import { images, site } from "@/lib/site";
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-bg py-14 md:py-20 lg:py-28">
-      <Container className="grid items-center gap-8 md:gap-12 lg:grid-cols-12 lg:gap-16">
+    <section id="about" className="scroll-mt-[calc(4.25rem+env(safe-area-inset-top)+0.75rem)] bg-bg py-16 md:scroll-mt-[calc(5rem+env(safe-area-inset-top)+0.75rem)] md:py-20 lg:py-28">
+      <Container className="grid items-center gap-10 md:gap-12 lg:grid-cols-12 lg:gap-16">
         <Photo
           src={images.about.src}
           alt={images.about.alt}
@@ -18,7 +18,7 @@ export function AboutSection() {
           <p className="text-[10px] uppercase tracking-[0.14em] text-sage md:text-[11px] md:tracking-[0.22em]">
             About
           </p>
-          <h2 className="mt-2.5 font-display text-[1.65rem] font-semibold leading-[1.2] tracking-tight text-ink min-[390px]:text-[1.85rem] md:mt-3 md:text-4xl">
+          <h2 className="mt-3 font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold leading-[1.22] tracking-tight text-ink md:mt-3 md:text-4xl md:leading-[1.2]">
             A Fontana cleaning company with a reputation to match the work.
           </h2>
           <p className="mt-5 max-w-md text-[15px] leading-[1.7] text-ink-soft md:mt-6 md:leading-relaxed">

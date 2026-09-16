@@ -23,13 +23,13 @@ export default function ServicesPage() {
         description="Home, office, general, and real-estate-related cleaning in Fontana. Tell us about a specific need when you request a quote."
       />
 
-      <section className="bg-surface py-12 md:py-24">
-        <Container className="space-y-14 md:space-y-20">
+      <section className="bg-surface py-16 md:py-24">
+        <Container className="space-y-16 md:space-y-20">
           {services.map((service, index) => (
             <article
               key={service.id}
               id={service.id}
-              className="grid scroll-mt-24 items-center gap-6 lg:grid-cols-12 lg:gap-14"
+              className="grid scroll-mt-28 items-center gap-6 lg:grid-cols-12 lg:gap-14"
             >
               <Photo
                 src={service.image.src}
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 <p className="text-[10px] uppercase tracking-[0.16em] text-sage md:text-[11px] md:tracking-[0.2em]">
                   0{index + 1}
                 </p>
-                <h2 className="mt-2.5 font-display text-[1.65rem] font-semibold tracking-tight text-ink md:mt-3 md:text-3xl">
+                <h2 className="mt-3 font-display text-[clamp(1.5rem,6.5vw,1.85rem)] font-semibold tracking-tight text-ink md:mt-3 md:text-3xl">
                   {service.name}
                 </h2>
                 <p className="mt-4 max-w-md text-[15px] leading-[1.7] text-ink-soft md:mt-5 md:leading-relaxed">
